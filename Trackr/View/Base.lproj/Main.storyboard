@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gather FriendsVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GatherFriendsVC" customModule="Trackr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nhn-ce-FWS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW7-Pd-fM4">
+                                <rect key="frame" x="40" y="64" width="334" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-dF-D6b">
+                                <rect key="frame" x="0.0" y="162" width="414" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="E8q-O6-tmg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vco-8x-9qK"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0r-NV-dL7">
+                                <rect key="frame" x="50" y="752" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ylw-eu-dLh"/>
+                                </constraints>
+                                <state key="normal" image="Start Trip Button"/>
+                                <connections>
+                                    <action selector="startTripButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5K8-AN-oeU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JW7-Pd-fM4" secondAttribute="trailing" constant="40" id="4Ey-h9-Cna"/>
+                            <constraint firstAttribute="trailing" secondItem="j0r-NV-dL7" secondAttribute="trailing" constant="50" id="4cM-Ow-wz2"/>
+                            <constraint firstItem="Nhn-ce-FWS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="65b-pR-YSU"/>
+                            <constraint firstItem="JW7-Pd-fM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="8Jg-j4-gJf"/>
+                            <constraint firstItem="JW7-Pd-fM4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DT7-Y3-PSC"/>
+                            <constraint firstItem="Nhn-ce-FWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FwJ-tb-PoJ"/>
+                            <constraint firstAttribute="trailing" secondItem="rn9-dF-D6b" secondAttribute="trailing" id="HY1-OK-cxx"/>
+                            <constraint firstItem="rn9-dF-D6b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O0P-QJ-Nnd"/>
+                            <constraint firstAttribute="trailing" secondItem="Nhn-ce-FWS" secondAttribute="trailing" id="O6X-vJ-vnP"/>
+                            <constraint firstItem="j0r-NV-dL7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Ze6-Go-KEf"/>
+                            <constraint firstItem="j0r-NV-dL7" firstAttribute="top" secondItem="rn9-dF-D6b" secondAttribute="bottom" constant="100" id="a1Y-7L-31w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j0r-NV-dL7" secondAttribute="bottom" constant="60" id="tHd-24-F0t"/>
+                            <constraint firstAttribute="bottom" secondItem="Nhn-ce-FWS" secondAttribute="bottom" id="uBS-dC-G2m"/>
+                            <constraint firstItem="rn9-dF-D6b" firstAttribute="top" secondItem="JW7-Pd-fM4" secondAttribute="bottom" constant="50" id="xgQ-Zh-0iz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="friendsListTableView" destination="rn9-dF-D6b" id="wTC-9r-XS5"/>
+                        <segue destination="Uts-lx-qmL" kind="presentation" identifier="startTripSegue" id="cb9-Pz-gxT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="44"/>
+        </scene>
+        <!--Trip MatesVC-->
+        <scene sceneID="9vr-Ai-50w">
+            <objects>
+                <viewController id="Uts-lx-qmL" customClass="TripMatesVC" customModule="Trackr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IsH-6H-nEe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-v0-nvy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Mates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-DY-pfp">
+                                <rect key="frame" x="40" y="64" width="334" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-pS-F2W">
+                                <rect key="frame" x="0.0" y="152" width="414" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="9M4-5O-nah"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Uts-lx-qmL" id="gOk-gu-AAp"/>
+                                    <outlet property="delegate" destination="Uts-lx-qmL" id="nHy-n0-UU2"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxe-Ll-w27">
+                                <rect key="frame" x="50" y="752" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CcT-zR-An6"/>
+                                </constraints>
+                                <state key="normal" image="End Trip Button"/>
+                                <connections>
+                                    <action selector="endTripButton:" destination="Uts-lx-qmL" eventType="touchUpInside" id="b3M-fM-cfW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vxe-Ll-w27" firstAttribute="leading" secondItem="IsH-6H-nEe" secondAttribute="leading" constant="50" id="5uf-z9-P4J"/>
+                            <constraint firstItem="QcC-qT-8cb" firstAttribute="bottom" secondItem="vxe-Ll-w27" secondAttribute="bottom" constant="60" id="85K-by-MsC"/>
+                            <constraint firstItem="Vvh-v0-nvy" firstAttribute="leading" secondItem="IsH-6H-nEe" secondAttribute="leading" id="DU1-jg-bE9"/>
+                            <constraint firstItem="vxe-Ll-w27" firstAttribute="top" secondItem="SQe-pS-F2W" secondAttribute="bottom" constant="100" id="Elv-1Z-uuI"/>
+                            <constraint firstAttribute="bottom" secondItem="Vvh-v0-nvy" secondAttribute="bottom" id="FVU-fk-tEh"/>
+                            <constraint firstItem="Vvh-v0-nvy" firstAttribute="top" secondItem="IsH-6H-nEe" secondAttribute="top" id="TrV-oY-MWj"/>
+                            <constraint firstAttribute="trailing" secondItem="SQe-pS-F2W" secondAttribute="trailing" id="aH2-O5-05P"/>
+                            <constraint firstItem="rJd-DY-pfp" firstAttribute="top" secondItem="QcC-qT-8cb" secondAttribute="top" constant="20" id="cu6-Mo-3yh"/>
+                            <constraint firstItem="rJd-DY-pfp" firstAttribute="leading" secondItem="IsH-6H-nEe" secondAttribute="leading" constant="40" id="d2f-NC-l5p"/>
+                            <constraint firstItem="SQe-pS-F2W" firstAttribute="top" secondItem="rJd-DY-pfp" secondAttribute="bottom" constant="50" id="fTG-37-ecX"/>
+                            <constraint firstAttribute="trailing" secondItem="rJd-DY-pfp" secondAttribute="trailing" constant="40" id="fzM-sa-isX"/>
+                            <constraint firstAttribute="trailing" secondItem="Vvh-v0-nvy" secondAttribute="trailing" id="hZW-qZ-Aij"/>
+                            <constraint firstItem="SQe-pS-F2W" firstAttribute="leading" secondItem="IsH-6H-nEe" secondAttribute="leading" id="utF-Ge-Ra6"/>
+                            <constraint firstAttribute="trailing" secondItem="vxe-Ll-w27" secondAttribute="trailing" constant="50" id="wI5-LU-CTb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QcC-qT-8cb"/>
+                    </view>
+                    <connections>
+                        <outlet property="friendsListTableView" destination="SQe-pS-F2W" id="iGw-Zh-m6B"/>
+                        <segue destination="9mX-xq-g1d" kind="show" identifier="mapSegue" id="7dz-WR-f0N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdY-eF-HOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="33"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="z3F-fC-IzF">
+            <objects>
+                <viewController id="9mX-xq-g1d" customClass="MapVC" customModule="Trackr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X8V-qC-gpO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eac-ji-a7h">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ww-AW-Xxy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Maps" id="jXW-Bg-aaC">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="oqI-vd-3Vi">
+                                            <connections>
+                                                <action selector="doneButton:" destination="9mX-xq-g1d" id="xjq-f7-YHe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eac-ji-a7h" firstAttribute="top" secondItem="8ww-AW-Xxy" secondAttribute="bottom" id="MnX-tH-qcV"/>
+                            <constraint firstItem="eac-ji-a7h" firstAttribute="leading" secondItem="2O3-zj-lco" secondAttribute="leading" id="epJ-cl-BbT"/>
+                            <constraint firstItem="8ww-AW-Xxy" firstAttribute="leading" secondItem="2O3-zj-lco" secondAttribute="leading" id="pOc-wA-DUC"/>
+                            <constraint firstAttribute="bottom" secondItem="eac-ji-a7h" secondAttribute="bottom" id="pV0-tU-XgW"/>
+                            <constraint firstItem="8ww-AW-Xxy" firstAttribute="top" secondItem="2O3-zj-lco" secondAttribute="top" id="qoz-TJ-2PW"/>
+                            <constraint firstItem="8ww-AW-Xxy" firstAttribute="trailing" secondItem="2O3-zj-lco" secondAttribute="trailing" id="sqf-Qp-soK"/>
+                            <constraint firstItem="2O3-zj-lco" firstAttribute="trailing" secondItem="eac-ji-a7h" secondAttribute="trailing" id="sr9-VM-Jbd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2O3-zj-lco"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yo-Jd-Hmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="End Trip Button" width="210" height="52"/>
+        <image name="Start Trip Button" width="210" height="52"/>
+        <image name="background" width="414" height="896"/>
+    </resources>
+</document>
