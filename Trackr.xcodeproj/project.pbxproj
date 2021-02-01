@@ -18,7 +18,6 @@
 		D03B26B023153FDD00AF661F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B26AF23153FDD00AF661F /* Networking.swift */; };
 		D03B26B223153FEF00AF661F /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B26B123153FEF00AF661F /* MapsVC.swift */; };
 		D03B26B7231543EC00AF661F /* FriendsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B26B5231543EC00AF661F /* FriendsListTableViewCell.swift */; };
-		D03B26BA2315442600AF661F /* GatherFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03B26B92315442600AF661F /* GatherFriendsCell.xib */; };
 		D03B26BC2315445C00AF661F /* FriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03B26BB2315445C00AF661F /* FriendListTableViewCell.xib */; };
 		D03B26C32315455700AF661F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03B26C12315455700AF661F /* Interface.storyboard */; };
 		D03B26C52315455800AF661F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03B26C42315455800AF661F /* Assets.xcassets */; };
@@ -32,6 +31,7 @@
 		D03B26E9231545B500AF661F /* RowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B26E7231545B400AF661F /* RowMessage.swift */; };
 		D03B26EA231545B500AF661F /* QuickMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B26E8231545B500AF661F /* QuickMessage.swift */; };
 		D03B26EC2315461D00AF661F /* myTableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B26EB2315461D00AF661F /* myTableObject.swift */; };
+		F1CA350D25C2A37500319914 /* GatherFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CA350C25C2A37500319914 /* GatherFriendsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +90,6 @@
 		D03B26AF23153FDD00AF661F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		D03B26B123153FEF00AF661F /* MapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
 		D03B26B5231543EC00AF661F /* FriendsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewCell.swift; sourceTree = "<group>"; };
-		D03B26B92315442600AF661F /* GatherFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GatherFriendsCell.xib; path = ../../../../Trekker/Trekker/View/GatherFriendsCell.xib; sourceTree = "<group>"; };
 		D03B26BB2315445C00AF661F /* FriendListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendListTableViewCell.xib; sourceTree = "<group>"; };
 		D03B26BF2315455700AF661F /* TrackWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03B26C22315455700AF661F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		D03B26E7231545B400AF661F /* RowMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowMessage.swift; sourceTree = "<group>"; };
 		D03B26E8231545B500AF661F /* QuickMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickMessage.swift; sourceTree = "<group>"; };
 		D03B26EB2315461D00AF661F /* myTableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTableObject.swift; sourceTree = "<group>"; };
+		F1CA350C25C2A37500319914 /* GatherFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GatherFriendsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				D03B269523153EB300AF661F /* Main.storyboard */,
+				F1CA350C25C2A37500319914 /* GatherFriendsCell.xib */,
 				D03B269A23153EB400AF661F /* LaunchScreen.storyboard */,
-				D03B26B92315442600AF661F /* GatherFriendsCell.xib */,
 				D03B26BB2315445C00AF661F /* FriendListTableViewCell.xib */,
 			);
 			path = View;
@@ -336,8 +336,8 @@
 			files = (
 				D03B269C23153EB400AF661F /* LaunchScreen.storyboard in Resources */,
 				D03B269923153EB400AF661F /* Assets.xcassets in Resources */,
-				D03B26BA2315442600AF661F /* GatherFriendsCell.xib in Resources */,
 				D03B269723153EB300AF661F /* Main.storyboard in Resources */,
+				F1CA350D25C2A37500319914 /* GatherFriendsCell.xib in Resources */,
 				D03B26BC2315445C00AF661F /* FriendListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
